@@ -7,12 +7,20 @@
   <body>
 
     <!-- Defines sound content -->
+    <audio controls autoplay loop muted>
 
-    <!-- Defines multiple media resources for media elements (<video>, <audio> and <picture>) -->
+      <!-- Defines multiple media resources for media elements (<video>, <audio> and <picture>) -->
+      <source src="https://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
+
+    </audio>
 
     <!-- Defines text tracks for media elements (<video> and <audio>) -->
+    <track kind="subtitles" src="sampleSubtitles_en.srt" srclang="en">
 
     <!-- Defines a video or movie-->
+    <video src="https://www.w3schools.com/tags/movie.mp4" autoplay poster="posterimage.jpg" controls loop muted>
+    </video>
+
 
   </body>
 </html>

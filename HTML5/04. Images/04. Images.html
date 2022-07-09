@@ -7,26 +7,41 @@
   <body>
 
     <!-- Defines an Image, alt gives you reference of the link if broken -->
+    <!-- Note: image, area, map all work together to do cool stuff -->
     <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-    alt="Google Logo" usemap="mymap1">
+    alt="Google Logo" usemap="#mymap1">
 
     <!-- Defines a client-side image map -->
     <map name="mymap1">
-    </map>
 
-    <!-- Defines an area inside an image map -->
-    <area shape="default" coords="" href="#" alt="">
+      <!-- Defines an area inside an image map.
+      Can see the link when hover over goo-->
+      <area shape="circle" coords="30,40,270,350" href="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">
+
+    </map>
 
 
     <!-- Used to draw graphics, on the fly, via scripting (JavaScript)-->
+    <canvas id="canvas" width="300" height="300"></canvas>
 
-    <!-- Defines a caption for a <figure> element -->
 
     <!-- Specifies self-contained content -->
+    <figure>
 
-    <!-- Defines a container for multiple image resources -->
+      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+      alt="Google Logo" usemap="#mymap1">
+      <!-- To add caption in figure -->
+      <figcaption>This is fig caption</figcaption>
 
-    <!-- Defines a container for SVG graphics -->
+    </figure>
+
+    <!-- Defines a container for multiple image resources, for CSS and responsive web -->
+    <picture>
+    </picture>
+
+    <!-- Defines a container for SVG graphics, it gives smooth graphics even if zoom in, modern tool -->
+    <svg>
+    </svg>
 
   </body>
 </html>
