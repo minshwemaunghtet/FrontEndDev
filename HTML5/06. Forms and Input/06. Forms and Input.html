@@ -7,29 +7,77 @@
   <body>
 
     <!-- Defines an HTML form for user input  -->
+    <form class="" action="index.html" method="post">
+    </form>
 
     <!-- Defines an input control -->
+    <input type="text" name="" value="">
+    <input type="button" name="" value="">
+    <input type="checkbox" name="" value="">
+    <input type="color" name="" value="">
+    <input type="checkbox" name="" value="">
+    <input type="file" name="" value="">
+    <input type="image" name="" value="">
+    <input type="month" name="" value="">
 
     <!-- Defines a multiline input control (text area)  -->
+    <textarea name="name" rows="8" cols="80"></textarea>
 
     <!-- Defines a clickable button -->
+    <button type="button" name="button">Button 1</button>
 
     <!-- Defines a drop-down list -->
+    <select class="" name="">
+    </select>
 
     <!-- Defines a group of related options in a drop-down list -->
+    <optgroup label="">
+    </optgroup>
 
     <!-- Defines an option in a drop-down list -->
+    <option value="">
+    </option>
 
     <!-- Defines a label for an <input> element -->
+    <label for="Movies">Movies
+    </label>
 
     <!-- Groups related elements in a form -->
+    <form class="" action="index.html" method="post">
 
-    <!-- Defines a caption for a <fieldset> element -->
+    <fieldset>
+      <label for="fname">First Name</label>
+      <input type="text" name="" value="">
+      <label for="lname">Last Name</label>
+      <input type="text" name="" value="">
+      <label for="cars">Cars</label>
+      <select class="" name="cars">
+
+        <option value="Chrysler">Chrysler</option>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+
+      </select>
+
+    </fieldset>
+
+    </form>
+
+    <!-- Defines a caption for a <fieldset> element works with form set-->
+    <form class="" action="index.html" method="post">
+      <legend>This is my caption</legend>
+    </form>
 
     <!-- Specifies a list of pre-defined options for input controls -->
+    <datalist class="">
+    </datalist>
 
     <!-- Defines the result of a calculation -->
-
+    <form oninput="x.value= parseInt(a.value) + parseInt(b.value)">
+      <input type="range" id="a" value="100"> +
+      <input type="number" id="b" value="30"> =
+      <output name="x" for="a b"></output>
+    </form>
 
   </body>
 </html>
