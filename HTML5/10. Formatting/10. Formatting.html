@@ -15,82 +15,183 @@
 
     <!-- Defines contact information for the author/owner of a document/article -->
     <!-- <br> and <address> do the same thing-->
-    <address class="">
-      Name City State<br>
-      Zip Code
-    </address>
-    <address class="">
-      Country
-    </address>
+    <p>
+      <address class="">
+        Name City State<br>
+        Zip Code
+      </address>
+      <address class="">
+        Country
+      </address>
+    </p>
 
     <!-- Defines bold text -->
+    <b>Bold Text</b>
 
     <!-- Isolates a part of text that might be formatted in a different direction from other text outside it -->
+    <h1>
+      <bdi dir="ltr">
+        Some more text
+      </bdi>
+    </h1>
 
     <!-- Overrides the currect text direction -->
+    <p>
+      <bdo dir="rtl">This is more text</bdo>
+    </p>
 
-    <!-- Defines big text -->
+    <!-- Defines big text, Not supported in HTML5 -->
+    <big>
+    </big>
 
     <!-- Defines a section that is quoted from another source -->
+    <blockquote cite="https://www.google.com">
+      This is amazing
+    </blockquote>
 
-    <!-- Defines centered text -->
+    <!-- Defines centered text, Not supported in HTML5 but can still use it-->
+    <center>
+      This is centered text
+    </center>
 
     <!-- Defines the title of a work -->
-
+    <p>
+      <cite>
+        The title
+      </cite>
+      by Min Shwe Maung Htet
+    </p>
+ 
     <!-- Defines a piece of computer code -->
+    <code>
+      This is my code
+    </code>
 
     <!-- Defines text that has been deleted from a document -->
+    <p>
+      <del>
+        <cite>This line has been deleted</cite>
+      </del>
+    </p>
 
     <!-- Specifies a term that is going to be defined within the content -->
-
+    <p>
+      <dfn>
+        CSS
+      </dfn>is standard styling for webpage
+    </p>
+   
     <!-- Defines emphasized text -->
+    <p>This is
+      <em>
+        awsome
+      </em>
+    </p>
 
-    <!-- Defines font, color, and size for text -->
+    <!-- Defines font, color, and size for text, not supported in HTML5-->
+    <font>
+    </font>
 
     <!-- Defines a part of text in an alternate voice or mood -->
+    <i>
+      Random Text
+    </i>
 
     <!-- Defines a text that has been inserted into a document -->
+    <p>
+      <ins>This is inserted text</ins>
+    </p>
 
     <!-- Defines keyboard input -->
+    <kbd>
+      This is keyboard input
+    </kbd>
 
     <!-- Defines marked/highlighted text -->
+    <p>
+      <mark>This is highlighted text</mark>
+    </p>
 
     <!-- Defines a scalar measurement within a known range (a gauge) -->
+    <br>
+    <label for="disk_c">C:</label>
+    <meter value="50" min="0" max="100"></meter>
 
     <!-- Defines preformatted text -->
+    <pre>
+      This is pre performed text
+    </pre>
 
     <!-- Represents the progress of a task -->
+    <progress value="50" max="100">50%</progress>
 
     <!-- Defines a short quotation -->
-
-    <!-- Defines what to show in browsers that do not support ruby annotations -->
+    <br><br><br> <!-- Line breaking to see better on web page -->
+    <q cite="">
+      This is short quotation
+    </q>
 
     <!-- Defines an explanation/pronunciation of characters (for East Asian typography)-->
+    <br><br><br>
+    <ruby>
+      This is RT tag<rt>Can you see me </rt>
+    </ruby>
 
     <!-- Defines a ruby annotation (for East Asian typography) -->
+    <ruby></ruby>
 
     <!-- Defines text that is no longer correct -->
+    <br><br><br><br><br>
+    <s>No Longer Correct</s>
 
     <!-- Defines sample output from a computer program -->
+    <br><br>
+    <samp>
+      This is samp tag
+    </samp>
 
     <!-- Defines smaller text -->
+    <br><br>
+    <small>
+      This is small text
+    </small>
 
-    <!-- Defines strikethrough text -->
+    <!-- Defines strikethrough text, not supported in HTML5-->
+    <br><br>
+    <strike>
+      This is strikethrough text
+    </strike>
 
     <!-- Defines important text -->
+    <br><br>
+    <strong>
+      This is important text
+    </strong>
 
     <!-- Defines subscripted text -->
+    <br><br>
+    <sub>
+      This is subscripted text
+    </sub>
 
     <!-- Defines superscripted text -->
+    <sup>
+      Superscripted Text
+    </sup>
 
     <!-- Defines a container for content that should be hidden when the page loads -->
+    <template id=""></template>
 
     <!-- Defines a specific time (or datetime)-->
+    <br><br>
+    <time datetime="2021-10-25">10:00</time>
 
-    <!-- Defines teletype text -->
+    <!-- Defines teletype text, not supported in HTML5 -->
+    <tt></tt>
 
     <!-- Defines a variable -->
-
+    <br><br>
+    <var>variable</var>
 
   </body>
 </html>
