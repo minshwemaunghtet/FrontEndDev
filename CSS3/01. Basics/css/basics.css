@@ -1,14 +1,9 @@
+/* NOTE : Check both basic.css and basic.html side by side together, to inspect, user inspect option in browser */
 
 /* 01. Comments
 ----------------
-
-CSS Comments are not displayed in the browser, but can help document your source code.
-
-Comments are used to explain the code, and may help when you edit the source code at a later date. */
-
-  /* To Comment out your CSS use this syntax
-
-          /* Comment out code here */
+          
+/* Comment out code here */
 
 
 /*===========================================================================================================================================*/
@@ -37,10 +32,10 @@ The declaration block contains one or more declarations separated by semicolons.
 Each declaration includes a CSS property name and a value, separated by a colon.
 Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.*/
 
-  /* h1 {
+  h1 {
     color: blue;
-    font-size: 12px;
-  } */
+    font-size: 20px;
+  }
 
 /*===========================================================================================================================================*/
 
@@ -74,25 +69,40 @@ We can divide CSS selectors into five categories:
 --------------
 
      Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
-
-
 */
 
+h1#color1{
+    color: tomato;
+}
 
+h1#rgb{
+    color:rgb(255, 145, 213);
+}
 
+h1#hex{
+    color: #00ffff;
+}
 
+h1#hsl{
+    color: hsl(360, 100%, 50%);
+}
 
 
 
 /*===========================================================================================================================================*/
 
 
-/* 06. Backgrounds
--------------------
+/* 06. Backgrounds 
+------------------- */
 
-    CSS background properties are used to add background effects for elements. */
-
-
+h1#background{
+    background: blue;
+    background-color: red;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url();
+}
 
 
 
@@ -103,15 +113,25 @@ We can divide CSS selectors into five categories:
 /* 07. Borders
 -------------------
 
-    The CSS border properties allow you to specify the style, width and color of an elements border. */
-
-    /* dotted - Defines a dotted border */
+    /* dotted */
+    p#borders1{
+        border-style: dotted; 
+     }
 
     /* dashed - Defines a dashed border */
+    p#borders2{
+        border-style: dashed;
+    }
 
     /* solid - Defines a solid border */
+    p#borders3{
+        border-style: solid;
+    }
 
     /* double - Defines a double border */
+    p#borders4{
+        border-style: double;
+    }
 
     /* groove - Defines a 3D grooved border.  The effect depends on the border-color value */
 
@@ -124,6 +144,11 @@ We can divide CSS selectors into five categories:
     /* none - Defines no border */
 
     /* hidden - Defines a hidden border */
+    p#borders10{
+        border-style: hidden;
+    }
+
+    
 
 
 
@@ -146,37 +171,38 @@ We can divide CSS selectors into five categories:
     inherit - specifies that the margin should be inherited from the parent element */
 
 
-    /* margin-top */
-
-
-    /* margin-right */
-
-
-    /* margin-bottom */
-
-
-    /* margin-left */
-
+    div.margin{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: blue;
+        height: 500px;
+        width: 500px;
+    }
 
 
 /*===========================================================================================================================================*/
 
 
-/* 09. Padding
+/* 09. Padding 
 -------------------
 
     Padding is used to create space around an elements content, inside of any defined borders.
 
     With CSS, you have full control over the padding.  There are properties for setting the padding for each side of an element(top, right, bottom and left)
-
-    /* padding-top */
-
-    /* padding-right */
-
-    /* padding-bottom */
-
-    /* padding-left */
-
+*/
+    
+    div.padding{
+        padding-top: 10px;
+        padding-bottom: 100px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding: 10px 100px 20px 20px; /* This is a combination of top bottom left and right */
+        background: black;
+        width: 500px;
+        height: 100px;
+    }
 
 
 /*===========================================================================================================================================*/
@@ -184,8 +210,6 @@ We can divide CSS selectors into five categories:
 
 /* 10. Height and Width
 -------------------
-
-    The CSS height and width properties are used to set the height and width of an element.
 
     The CSS max-width property is used to set the maximum witdh of an element.
 
@@ -204,6 +228,11 @@ We can divide CSS selectors into five categories:
 
     inherit - The height/width will be inherited from its parent value. */
 
+        div.hw{
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
 
 
 /*===========================================================================================================================================*/
@@ -211,8 +240,6 @@ We can divide CSS selectors into five categories:
 
 /* 11. Box Model
 -------------------
-
-    In CSS, the term "box model" is used when talking about design and layout.
 
     The CSS box model is essentially a box that wraps around every HTML element.
     It consists of: margins, borders, padding, and the actual content.
@@ -226,8 +253,16 @@ We can divide CSS selectors into five categories:
     Border - A border that goes around the padding and content
 
     Margin - Clears an area out the border. The margin is transparent
+ */
 
-    The box model allows us to add a border around elements and to define space between elements */
+    div.boxmodel{
+        width: 500px;
+        height: 500px;
+        border: 5px solid aqua;
+        padding: 30px;
+        margin: 50px;
+
+    }
 
 
 
@@ -238,8 +273,13 @@ We can divide CSS selectors into five categories:
 -------------------
 
     An outline is a line that is drawn around elements, OUTSIDE the border, to make the element "stand out"*/
+    p.outline1{
+        outline-style: dashed;
+    }
 
-
+    p.outline2{
+        outline-style: dotted;
+    }
 
 
 /*===========================================================================================================================================*/
@@ -249,11 +289,14 @@ We can divide CSS selectors into five categories:
 -------------------
 
       /*
-      CSS has a lot of properties for formatting text. */
-
-
-
-
+      CSS has a lot of properties for formatting text. */   
+      h1#text1{
+        color: orange;
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+      }
+    
 
 
 /*===========================================================================================================================================*/
@@ -267,7 +310,10 @@ We can divide CSS selectors into five categories:
     The font-family property should hold several font names as a "fallback" system, to ensure maxiumum compatibility between
     browsers/operating systems.  Start with the font you want, and end with a generic family (to let the browser pick a similar
     font in the generic family, if no other fonts are available).  The font names should be separated with a comma. */
-
+      body{
+        font-family: sans-serif, monospace;
+        font-family: 'Roboto', sans-serif;
+      }
 
 
 /*===========================================================================================================================================*/
@@ -307,7 +353,21 @@ We can divide CSS selectors into five categories:
     a:visited - a link the user has visited
     a:hover - a link when the user mouses over it
     a:active - a link the moment it is clicked*/
+    a:link{
+        color: red;
+    }
 
+    a:visited{
+        color: purple;
+    }
+
+    a:hover{
+        color: black;  
+    }
+
+    a:active{
+        color: green;
+    }
 
 
 
@@ -316,12 +376,14 @@ We can divide CSS selectors into five categories:
 
 /* 17. Lists
 -------------------
+*/
+    ul{
+        list-style-type: square;
+    }
 
-    The list-style-type property specifies the type of list item marker. */
-
-
-
-
+    ol{
+        list-style-type:lower-alpha;
+    }
 
 
 
@@ -330,9 +392,11 @@ We can divide CSS selectors into five categories:
 
 /* 18. Tables
 -------------------
-
-    Tables with CSS */
-
+*/
+    table,tr, td {
+        border: 1px solid black;
+        width: 100%;
+    }
 
 
 
