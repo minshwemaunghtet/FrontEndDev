@@ -409,9 +409,10 @@ h1#background{
     The display property specifies if/how an element can be displayed.
 
     Every HTML element has a default value depending on what type of element it is.
-
-    The default display value for most elements is block or inline. */
-
+ */
+    li.display{
+        display: inline;
+    }
      
 
 /*===========================================================================================================================================*/
@@ -419,8 +420,13 @@ h1#background{
 
 /* 20. Max-Width
 -------------------
-
-    Using Max-Width with css
+*/
+    div.max{
+        width: 500px;
+        margin: auto;
+        border: 5px solid black;
+    }
+    
 
 /*===========================================================================================================================================*/
 
@@ -429,6 +435,13 @@ h1#background{
 -------------------
 
     The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute, or sticky) */
+    div.static{
+       width: 500px;
+       height: 500px;
+       background: yellowgreen;
+       position: static;
+       border: 5px solid black; 
+    }
 
 /*===========================================================================================================================================*/
 
@@ -442,10 +455,16 @@ h1#background{
     The overflow property has the following values:
 
     visible - Default The overflow is not clipped.  The content renders outside the elements box.
-
     hidden - The overflow is clipped and the rest of content will be invisible.
-
     scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content. */
+    
+    div.overflow{
+        width: 400px;
+        height: 400px;
+        background: pink;
+        border: 3px solid black;
+        overflow: scroll;
+    }
 
 /*===========================================================================================================================================*/
 
@@ -457,28 +476,46 @@ h1#background{
 
     The CSS clear property specifies what elements can float beside the cleared element and on which side. */
 
+    div.div1{
+        width: 400px;
+        height: 400px;
+        background: tomato;
+        border: 3px solid black;
+        float: right;
+    }
+
 /*===========================================================================================================================================*/
 
 
 /* 24. Inline-Block
 -------------------
 
-    Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
-
-    Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
-
-    Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so
-    the element can sit next to other elements. */
-
+     */
+    span.a{
+        display: inline-block; /*Can also use: inline*/
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 4px solid black;
+        background: yellow;
+    }
 
 /*===========================================================================================================================================*/
 
 
 /* 25. Align
 -------------------
-
-
-    Use CSS to align the content */
+ */
+    
+    div.center{
+        margin: auto;
+        width: auto;
+        height: 50%;
+        height: 200px;
+        background: dodgerblue;
+        border: 3px solid rebeccapurple;
+        padding: 10px;
+    }
 
 /*===========================================================================================================================================*/
 
@@ -498,13 +535,33 @@ h1#background{
     3. adjacent sibling selector (+)
     4. general sibling selector (~) */
 
+    div p {
+        background: orange;
+    }
+    
+    div > p {
+        background: darkolivegreen;
+    }
+
+    div + p {
+        background: chocolate;
+    }
+
 /*===========================================================================================================================================*/
 
 
 /* 27. Pseudo Class
 -------------------
+ */
+    div.hover{
+       background: red;
+       width: 100px;
+       height: 50px;  
+    }
 
-    Pseudo-classes can be combined with CSS classes. */
+    div.hover:hover{
+        background: dodgerblue;
+    }
 
 /*===========================================================================================================================================*/
 
@@ -513,7 +570,9 @@ h1#background{
 -------------------
 
     A CSS pseudo-element is used to style specified parts of an element. */
-
+    p::first-line{
+        color: blueviolet;
+    }
 
 /*===========================================================================================================================================*/
 
@@ -521,15 +580,25 @@ h1#background{
 /* 29. Opacity
 -------------------
 
-    The opacity property specifies the opacity/ transparency of an element */
+    The opacity property specifies transparency of an element */
+    img#googleimg{
+        opacity: 0.8;
+    }
+
+    img#googleimg:hover{
+        opacity: 0.4;
+    }
 
 /*===========================================================================================================================================*/
 
 
 /* 30. Navigation Bar
 -------------------
-
-    Use CSS to create Navigation Bar */
+ */
+    
+    li{
+        display: inline-flexbox;
+    }
 
 
 /*===========================================================================================================================================*/
@@ -565,8 +634,11 @@ h1#background{
 
 /* 34. Attr Selectors
 -------------------
+*/
+    a[target]{
+        background: yellow;
+    }
 
-    The [attribute] selector is used to select elements with a specified attribute. */
 
 /*===========================================================================================================================================*/
 
@@ -575,6 +647,32 @@ h1#background{
 -------------------
 
     You can style Forms with CSS */
+    input[type=text], select{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 10px solid black;
+        border-radius: 4px;
+        box-sizing: border-box; 
+    }
+
+    input[type=submit]{
+        width: 100%;
+        background: lightcoral;
+        color: white;
+        padding: 15px 30px;
+        margin: 9px 0;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover{
+        background: green;
+    }
+
+
 
 /*===========================================================================================================================================*/
 
