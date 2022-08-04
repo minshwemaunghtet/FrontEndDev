@@ -1,3 +1,98 @@
 body {
-  background: red;
+  background: aquamarine;
 }
+
+div.borderRadius{
+  width: 200px;
+  height: 100px;
+  background: black;
+  border-radius: 30px;
+}
+
+p#borderImg{
+  border: 12px solid transparent;
+  padding: 20px;
+  border-image: url(https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png) 40 round;
+}
+
+div.gradientTb{
+  height: 300px;
+  background-color: brown;
+  background-image: linear-gradient(orange,pink);
+  background-image: linear-gradient(to left, blue, green);
+}
+
+h1#shadows{
+  text-shadow: 4px 4px gray; 
+}
+
+div.transitions{
+  width: 200px;
+  height: 300px;
+  background: lightcoral;
+}
+
+div.transitions:hover{
+  background: orange;
+}
+
+
+div.animaTion{
+  width: 200px;
+  height: 300px;
+  background: white;
+  animation-name: first;
+  animation-duration: 3s;
+
+}
+
+/* The first name is from above animation */
+@keyframes first {
+  from {background:pink;}
+  to   {background: firebrick;}
+  
+}
+
+
+div.toolTip{
+  position: relative;
+  display: inline-flexbox;
+  border-bottom: 4px dotted black; 
+}
+
+.toolTip .toolText{
+  visibility: hidden;
+  width: 40px;
+  background: black;
+  color: yellowgreen;
+  text-align: center;
+  border-radius: 9px;
+  padding: 7px 0;
+  z-index: 3;
+}
+
+.toolTip:hover .toolText{
+  visibility: visible;
+}
+
+
+.myButton{
+  background: violet;
+  border: none;
+  padding: 15px 32px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.myButton:hover{
+  background: greenyellow;
+}
+
+
+
+
