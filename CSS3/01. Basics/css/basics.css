@@ -1,13 +1,5 @@
 /* NOTE : Check both basic.css and basic.html side by side together, to inspect, user inspect option in browser */
 
-/* 01. Comments
-----------------
-          
-/* Comment out code here */
-
-
-/*===========================================================================================================================================*/
-
 
 /*   02. Where to Insert CSS
 -----------------------------
@@ -55,11 +47,6 @@ We can divide CSS selectors into five categories:
   3. Pseudo-class selectors (select elements based on a certain state)
   4. Pseudo-elements selectors (select and style a part of an element)
   5. Attribute selectors (select elements based on an attribute or attribute value) */
-
-
-
-
-
 
 
 /*===========================================================================================================================================*/
