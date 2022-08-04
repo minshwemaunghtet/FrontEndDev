@@ -672,6 +672,13 @@ h1#background{
         background: green;
     }
 
+    div.form{
+        border-radius: 5px;
+        background: gray;
+        padding: 30px;
+
+    }
+
 
 
 /*===========================================================================================================================================*/
@@ -744,3 +751,8 @@ h1#background{
 
     In face, if you use the !important rule, it will override ALL previous styling rules for that
     specific property on that element! */
+
+    p.important{
+        background: red;
+        background: dodgerblue!important;
+    }
