@@ -1,3 +1,57 @@
-body {
-  background:yellow;
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  border: 2px solid blue;
+  padding: 20px;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"]{
+  float: left;
+  padding: 20px;
+  border: 4px solid red;
+}
+
+.col-1 {width: 8%;}
+.col-2 {width: 30;}
+.col-3 {width: 30%;}
+
+img {
+  width: 30%;
+  height: auto;
+}
+
+video {
+  width: 50%;
+  height: auto;
+}
+
+/* This below is like what happened after we minimize the window */
+@media only screen and (max-width: 800px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  body {
+    background: gray;
+  }
+  
+  img {
+    width: 40%;
+    height: auto;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+
+  }
+
 }
