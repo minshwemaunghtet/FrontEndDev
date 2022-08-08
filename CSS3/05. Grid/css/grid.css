@@ -1,3 +1,17 @@
-body {
-  background: black;
+/* These are just some example properties, more stuff here: https://www.w3schools.com/css/css_grid.asp  */
+.gridContainer {
+  display: grid;
+  grid-row-gap: 60px;
+  grid-column-gap: 60px;
+  grid-template-columns: auto auto auto;
+  background: lightblue;
+  padding: 20px;
+}
+
+.gridItem {
+  background: lightseagreen;
+  border: 4px solid black;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
 }
