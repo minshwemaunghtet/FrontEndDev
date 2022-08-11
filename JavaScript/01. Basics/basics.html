@@ -3,12 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title> JavaScript | Basics</title>
+    <script>console.log("hello world 1")</script>
   </head>
   <body>
 
-  <!-- Start JavaScript Here -->
-  <script type="text/javascript" src="basics.js">
+    <p id="test"></p>
+    <script>
+      document.getElementById("test").innerHTML = 20 + 30;
+    </script>
 
-  </script>
-  </body>
+    <script>
+      document.write(10+10);
+    </script>
+
+    <br><br>
+
+    <button type="button" onclick="document.write(5+6)" name="button">Click Me</button>
+    <script>
+      window.alert(10+10);
+    </script>
+
+    <script>console.log("This is console.log")
+    </script>
+
+    
+    <button onclick="window.print()" name="button">Print this page</button>
+
+  <!-- Start JavaScript Here -->
+   <script type="text/javascript" src="basics.js"></script>
+   <script>console.log("Hello world 2")</script>
+   
+</body>
 </html>
